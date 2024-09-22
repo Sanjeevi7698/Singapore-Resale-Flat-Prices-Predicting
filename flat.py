@@ -11,7 +11,7 @@ st.set_page_config(page_title='Singapore Flat Resale Price Predictor', layout='w
 
 st.markdown("<h1 style='text-align: center; color: blue;'>Singapore Flat Resale Price Predicton</h1>",unsafe_allow_html=True)
 
-df=pd.read_csv(r'C:\Users\Muthusamy\Documents\PROJECTS-2023\6.Singapore_Project\final.csv')
+df=pd.read_csv(r'C:\Users\Sanjeevi\Documents\PROJECTS-2023\6.Singapore_Project\final.csv')
 df=df.drop(['Unnamed: 0'],axis=1) 
 
 tab1,tab2,tab3=st.tabs(['HOME','PREDICTION','PREDICTION AND CONCLUSION'])
@@ -349,7 +349,7 @@ with tab3:
             
             def load_data():
                 # Load data
-                data = pd.read_csv(r'C:\Users\Muthusamy\Documents\PROJECTS-2023\6.Singapore_Project\final.csv')
+                data = pd.read_csv(r'C:\Users\Sanjeevi\Documents\PROJECTS-2023\6.Singapore_Project\final.csv')
                 sample_df = data.sample(n=5000, random_state=42)
                 return sample_df
 
